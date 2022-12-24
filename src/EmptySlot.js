@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+import { React, useEffect } from "react";
+
 
 function EmptySlot(props) {
-
     useEffect(()=>{
         let randomSeconds = Math.ceil(Math.random() * 6000);
         let timer = setTimeout(()=>{
@@ -9,9 +9,10 @@ function EmptySlot(props) {
         }, randomSeconds)
         return () => clearTimeout(timer)
     })
-    return (
+
+    return(
         <div>
-            <img src="../images/molehill.png" alt="Mole Hill"/>
+            <img src="../images/molehill.png" alt="Mole Hill" />
         </div>
     )
 }

@@ -1,14 +1,15 @@
-import { useState } from 'react';
+import { React, useState } from 'react';
 import MoleContainer from './MoleContainer';
 import './App.css'
 
 
 function App() {
 
-  let [score,setScore] = useState(0)
+  let [score, setScore] = useState(0)
 
   const createMoleHill = () => {
     let hills = [];
+    
     for(let i = 0; i < 9; i++){
       hills.push(
       <MoleContainer
@@ -25,6 +26,7 @@ function App() {
       </div>
     )
   }
+
   return (
     <div className="App">
       <h1>Click-a-Mole!</h1>

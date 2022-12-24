@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { React, useEffect } from "react";
 
 function Mole(props){
 
     useEffect(() =>{
         let randomSeconds = Math.ceil(Math.random() * 6000);
+        
         let timer = setTimeout(()=>{
             props.setDisplayMole(false)
         }, randomSeconds)

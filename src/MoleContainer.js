@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Mole from './Mole'
+import { React, useState } from "react";
+import Mole from './Mole';
 import EmptySlot from './EmptySlot'
 
 function MoleContainer(props){
