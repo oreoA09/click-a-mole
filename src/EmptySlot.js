@@ -12,7 +12,7 @@ function EmptySlot(props) {
 
     return(
         <div>
-            <img src="../images/molehill.png" alt="Mole Hill" />
+            <img src="../images/molehill.png" alt="Mole Hill" width={200} />
         </div>
     )
 }
